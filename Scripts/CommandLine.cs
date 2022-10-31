@@ -124,7 +124,7 @@ namespace JumpSquareGames.CommandLine
                         {
                             int count = commandContent[k].Split('|').Count();
 
-                            var argVal = args[k].GetType();
+                            var argVal = args[k - wordCounter].GetType();
                             var listType = typeof(List<>).MakeGenericType(argVal);
                             var contents = (IList)Activator.CreateInstance(listType);
 

@@ -24,5 +24,13 @@ namespace JumpSquareGames.CommandLine
 
             return isNumber;
         }
-    } 
+
+        public static bool Toggle(this bool val)
+        {
+            if (val)
+                return false;
+
+            return true;
+        }
+    }
 }

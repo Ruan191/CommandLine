@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -47,7 +48,7 @@ namespace JumpSquareGames.CommandLine
                 {
                     CommandLine.Instance.RunCommand(text);
                 }
-                catch
+                catch (Exception ex)
                 {
                     ConsoleLogError("Failed to run the command: " + text);
                 }
@@ -111,6 +112,15 @@ namespace JumpSquareGames.CommandLine
         private void Log(string text)
         {
             ConsoleLog(text);
+        }
+
+        [Command("print-a")]
+        private void LogPoints(string text, Vector3[] points)
+        {
+            foreach (var point in points)
+            {
+                ConsoleLog(text + " " + point.ToString());
+            }
         }
     } 
 }
