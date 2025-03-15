@@ -1,5 +1,3 @@
-
-markdown
 # Command Line Tool for Unity
 
 ## What is the Command Line Tool?
@@ -47,8 +45,7 @@ The `print` command is included by default in the **command line package**, alon
 
 ---
 
-This markdown file is formatted for easy copying and pasting into your project documentation. Let me know if you need any further refinements! 🚀
-```
+
 
 
 
@@ -79,7 +76,6 @@ Note that single quotes that surrounding the 'Hello World' text. The commandline
 | Array or List | 15\|20                         | YES                      | All types above can be placed in an array or list by placing them between the straight line symbol. |
 
 
-```markdown
 # Using the Command Line in Play Mode
 
 In this guide, we will explore how to use the command line system to print text at random points in a scene. We'll break down how to define and use a custom command with specific argument types.
