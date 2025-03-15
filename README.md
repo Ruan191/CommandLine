@@ -1,3 +1,4 @@
+![Command Line UI](ReadMEImages/cmd_banner.png)
 # Command Line Tool for Unity
 
 ## What is the Command Line Tool?
@@ -41,7 +42,7 @@ In this example:
 
 The `print` command is included by default in the **command line package**, along with a **default command line UI**, as shown below.
 
-![Default Command Line UI](#)
+![Command Line UI](ReadMEImages/ex1.png)
 
 ---
 
@@ -94,7 +95,7 @@ private void LogAtPoints(string text, Vector3[] points)
     }
 }
 ```
-
+![Command Line UI](ReadMEImages/ex2.png)
 ### Breaking Down the Command
 
 Example command usage:
@@ -164,6 +165,8 @@ _commandLineUI.ConsoleLogError("This is an error log");
 
 _commandLineUI.ConsoleLogWarning("This is a warning log");
 ```
+![Command Line UI](ReadMEImages/ex3.png)
+
 
 🚨 **When a command fails to execute, an error log will be displayed in the console.**
 
